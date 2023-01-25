@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+  <script src="cadastro.js"></script>
+  <style>
+    div {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Usando email e telefone em formulários</h1>
+
+<form action="cadastro.js" method="get">
+
+  <fieldset>
+    <legend>Dados pessoais</legend>
+    <div>
+      <label for="inome">Nome</label>
+      <input type="text" name="nome" id="inome">
+    </div>
+    <div>
+      <label for="itel">Telefone:</label>
+      <input type="tel" name="tel" id="itel" placeholder="(00) 00000-0000"  pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+    </div>
+    <div>
+      <label for="iemail">Email:</label>
+      <input type="email" name="email" id="iemail" size="25" placeholder="example@email.com" required>
+    </div>
+  </fieldset>
+
+  <div>
+    <input type="submit" value="Enviar" onclick="cadastro()">
+    <input type="reset" value="Limpar">
+  </div>
+
+</form>
+
+  
+</body>
+</html>
