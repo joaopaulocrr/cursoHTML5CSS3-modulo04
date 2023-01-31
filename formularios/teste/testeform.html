@@ -14,13 +14,43 @@
 
     <form action="#" method="get" id="formulario">
 
-      <div>
-        <label for="inome">Nome:</label>
-        <input type="text" name="nome" id="inome">
-      </div>
-      <div>
-        <label for="itel">Telefone:</label>
-        <input type="tel" name="tel" id="itel">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="inome">Nome:</label>
+          <input type="text" name="nome" id="inome" required>
+        </div>
+        <div>
+          <label for="itel">Telefone:</label>
+          <input type="tel" name="tel" id="itel" required>
+        </div>
+        <div>
+          <label for="iemail">Email:</label>
+          <input type="email" name="email" id="iemail" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <div>
+          <label for="irua">Rua:</label>
+          <input type="text" name="rua" id="irua">
+        </div>
+        <div>
+          <label for="ibairro">Bairro:</label>
+          <input type="text" name="bairro" id="ibairro">
+        </div>
+        <div>
+          <label for="iestado">Estado:</label>
+          <input type="text" name="estado" id="iestado">
+        </div>
+
+      </fieldset>
+
+      <div class="butons-validations">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar tudo">
       </div>
 
     </form>
