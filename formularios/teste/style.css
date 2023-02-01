@@ -3,6 +3,7 @@
 :root {
   --cor-de-fundo: rgba(177, 162, 162, 0.521);
   --cor-de-hover: lightgray;
+  --cor-de-fundo-buttons: rgba(128, 128, 128, 0.87);
 }
 
 * {
@@ -29,9 +30,9 @@
   padding-top: 50px;
   
 }
-#formulario {
+.flex {
   background-color: var(--cor-de-fundo);
-  height: 100vh;
+  height: 100%;
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@ fieldset legend {
   font-size: 2em;
   
 }
-label {
+.flex label {
   display: block;
   font-size: 1.5em;
 
@@ -56,14 +57,33 @@ fieldset div input {
   height: 2em;
   border-radius: 14px;
   margin-bottom: 20px;
-  width: 500px;
+  width: 50vw;
   text-indent: 5px;
+}
+
+.gen_time {
+  background-color: var(--cor-de-fundo);
+  height: 100%;
+  padding-left: 4em;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.gen_time > fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.gen_time fieldset p {
+  padding: 10px;
 }
 
 .butons-validations {
   display: flex;
-  justify-content: space-between;
-  width: 31vw;
+  justify-content: space-around;
+  width: 60vw;
+  background-color: var(--cor-de-fundo-buttons);
+  padding: 10px;
 }
 
 .butons-validations > input {
@@ -71,6 +91,7 @@ fieldset div input {
   border-radius: 10px;
   
 }
+
 
 fieldset div input:hover{
   background-color: var(--cor-de-hover);

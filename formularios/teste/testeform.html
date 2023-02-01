@@ -14,39 +14,82 @@
 
     <form action="#" method="get" id="formulario">
 
-      <fieldset>
-        <legend>Dados Pessoais</legend>
-        <div>
-          <label for="inome">Nome:</label>
-          <input type="text" name="nome" id="inome" required>
-        </div>
-        <div>
-          <label for="itel">Telefone:</label>
-          <input type="tel" name="tel" id="itel" required>
-        </div>
-        <div>
-          <label for="iemail">Email:</label>
-          <input type="email" name="email" id="iemail" required>
-        </div>
-      </fieldset>
+      <div class="flex">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required>
+          </div>
+          <div>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" required>
+          </div>
+          <div>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Endereço</legend>
+          <div>
+            <label for="irua">Rua:</label>
+            <input type="text" name="rua" id="irua">
+          </div>
+          <div>
+            <label for="ibairro">Bairro:</label>
+            <input type="text" name="bairro" id="ibairro">
+          </div>
+          <div>
+            <label for="iestado">Estado:</label>
+            <input type="text" name="estado" id="iestado">
+          </div>
+        </fieldset>
+      </div>
 
-      <fieldset>
-        <legend>Endereço</legend>
+      <div class="gen_time">
+        <fieldset>
+          <legend>Sexo</legend>
+          <p>
+            <input type="radio" name="sexo" id="imasc">
+            <label for="imasc">Masculino</label>
+          </p>
+          <p>
+            <input type="radio" name="sexo" id="ifem">
+            <label for="ifem">Feminino</label>
+          </p>
+          <p>
+            <input type="radio" name="sexo" id="ihom">
+            <label for="ihom">Homossexual</label>
+          </p>
+          <p>
+            <input type="radio" name="sexo" id="iundef">
+            <label for="iundef">Prefiro não dizer</label>
+          </p>
+        </fieldset>
 
-        <div>
-          <label for="irua">Rua:</label>
-          <input type="text" name="rua" id="irua">
-        </div>
-        <div>
-          <label for="ibairro">Bairro:</label>
-          <input type="text" name="bairro" id="ibairro">
-        </div>
-        <div>
-          <label for="iestado">Estado:</label>
-          <input type="text" name="estado" id="iestado">
-        </div>
+        <fieldset>
+          <legend>Times Preferidos</legend>
+          <p>
+            <input type="checkbox" name="fut" id="ifut">
+            <label for="ifut">Futebol</label>
+          </p>
+          <p>
+            <input type="checkbox" name="volei" id="ivolei">
+            <label for="ivolei">Volei</label>
+          </p>
+          <p>
+            <input type="checkbox" name="basq" id="ibasq">
+            <label for="ibasq">Basquete</label>
+          </p>
+          <p>
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tenis</label>
+          </p>
+        </fieldset>
+      </div>
 
-      </fieldset>
+
 
       <div class="butons-validations">
         <input type="submit" value="Enviar">
