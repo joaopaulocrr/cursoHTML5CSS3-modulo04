@@ -23,9 +23,10 @@
 }
 
 .principal > h1 {
-  width: 60vw;
+  min-width: 51.5vw;
   height: 100px;
   background-color: var(--cor-de-fundo);
+  font-size: 2.8rem;
   text-align: center;
   padding-top: 50px;
   
@@ -33,7 +34,6 @@
 .flex {
   background-color: var(--cor-de-fundo);
   height: 100%;
-  width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,11 +77,19 @@ fieldset div input {
 .gen_time fieldset p {
   padding: 10px;
 }
+.input_crf{
+  background-color: var(--cor-de-fundo);
+  padding: 10px;
+}
+
+.input_crf p {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
 
 .butons-validations {
   display: flex;
   justify-content: space-around;
-  width: 60vw;
   background-color: var(--cor-de-fundo-buttons);
   padding: 10px;
 }
