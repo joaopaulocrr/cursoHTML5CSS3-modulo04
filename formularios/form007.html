@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>Exemplo de formulário</h1>
-  <form action="#" method="get">
+  <form action="#" method="post">
    
     <p>
       <label for="iest">Estado: </label>
@@ -34,15 +34,15 @@
       <label for="iprof">Profissão: </label>
       <input type="text" name="prof" id="iprof" list="listprof">
       <datalist id="listprof">
-        <option>Administrador</option>
-        <option>Contabillista</option>
-        <option>Desenvolvedor</option>
+        <option value="ADM">Administrador</option>
+        <option value="CONT">Contabillista</option>
+        <option value="DEV">Desenvolvedor</option>
       </datalist>
     </p>
 
     <!--O ideal é que se use método POST para o textarea também-->
     <p>
-      <label for="msg">Mensagem: </label><br>
+      <label for="imsg">Mensagem: </label><br>
       <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
     </p>
 
