@@ -56,20 +56,111 @@
         <input type="checkbox" name="telefone" id="itelefone">
         <label for="itelefone">Telefone</label> <br>
 
-        <input type="checkbox" name="email" id="iemail">
-        <label for="itelefone">Email</label> <br>
+        <input type="checkbox" name="email2" id="iemail2">
+        <label for="iemail2">Email</label> <br>
 
         <input type="checkbox" name="ambas" id="iambas">
-        <label for="itelefone">Ambas as opções</label>
+        <label for="iambas">Ambas as opções</label>
       </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Nacionalidade</legend>
+        <p>
+          <label for="ipais">País em que nasceu</label>
+          <input type="text" name="pais" id="ipais" list="nac">
+          <datalist id="nac">
+            <option>Brasil</option>
+          </datalist>
+        </p>
+
+        <p>
+          <label for="iestado">Estado em que nasceu</label>
+          <select name="estado" id="iestado" >
+            <option>--Selecione--</option>
+            <optgroup label="Região Norte">
+              <option>Amazonas</option>
+              <option>Pará</option>
+              <option>Acre</option>
+              <option>Roraima</option>
+              <option>Rondônia</option>
+              <option>Amapá</option>
+              <option>Tocantins</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+              <option>Bahia</option>
+              <option>Rio Grande do Norte</option>
+              <option>Paraíba</option>
+              <option>Sergipe</option>
+              <option>Piauí</option>
+              <option>Maranhão</option>
+              <option>Alagoas</option>
+              <option>Ceará</option>
+              <option>Pernambuco</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+              <option>Rio Grande do Sul</option>
+              <option>Santa Catarina</option>
+              <option>Paraná</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">
+              <option>Minas Gerais</option>
+              <option>Espírito Santo</option>
+              <option>Rio de Janeiro</option>
+              <option>São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Centro-Oeste">
+              <option>Mato Grosso</option>
+              <option>Mato Grosso do Sul</option>
+              <option>Goiás</option>
+              <option>Distrito Federal</option>
+
+            </optgroup>
+          </select>
+        </p>
+
+
     </fieldset>
 
     <fieldset>
       <legend>Login</legend>
       <p>
+        <label for="iusuario">Usuário</label>
+        <input type="text" name="usuario" id="iusuario">
+      </p>
+
+      <p>
         <label for="isenha">Senha</label>
         <input type="password" name="senha" id="isenha" required>
       </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Resumo Pessoal</legend>
+      <label for="iresumo">Faça um breve resumo sobre sua própria pessoa:</label><br>
+      <textarea name="resumo" id="iresumo" cols="30" rows="10"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Configurações</legend>
+
+        <p>
+          <label for="icor">Selecione a cor de fundo:</label>
+          <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+          <label for="ifundo">Selecione o plano de fundo</label>
+          <input type="file" name="fundo" id="ifundo">
+        </p>
+
+        <p>
+          <label for="ifonte">Selecione  o tamanho da fonte: </label>
+          <input type="range" name="fonte" id="ifonte" min="1" max="3" value="1"
+          oninput= "fontsize.innerHTML = ifonte.value">
+          <output id="fontsize">1</output>
+        </p>
+
     </fieldset>
       
     <p>
@@ -79,8 +170,5 @@
 
   </form>
 
-  <script>
-  
-  </script>
 </body>
 </html>
