@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*Estilo para tela*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+body {
+  background-color: gray;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+menu ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  
+}
+
+menu ul li {
+  list-style-type: none;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  margin: auto;
+  padding: 15px;
+  background-color: white;
+  width: 70%;
+  border-radius: 10px;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+main article h2 {
+  margin-bottom: 20px;
+  text-shadow: -2px 20px 2px rgb(245, 235, 235);
+}
+
+article > p {
+  padding-bottom: 10px;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  
+}
+footer nav {
+  
+}
+footer nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+footer nav ul li {
+  list-style-type: none;
+  
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+}
