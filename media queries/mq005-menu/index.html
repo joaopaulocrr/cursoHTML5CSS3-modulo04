@@ -5,17 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu responsivo</title>
-  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/mobile.css">
+  <link rel="stylesheet" href="estilo/landscape.css">
+  <link rel="stylesheet" href="estilos/tablet.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>Meu Site</h1>
-    <div class="menu">
+    <div class="menu" onclick="clicar()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <menu>
+    <menu id="display">
       <ul>
         <li><a href="#">Opção 1</a></li>
         <li><a href="#">Opção 2</a></li>
@@ -40,5 +43,7 @@
       </p>
     </article>
   </main>
+
+  
 </body>
 </html>
